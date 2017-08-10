@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="30dp"
+        android:layout_marginTop="2dp"
+        android:drawableTop="@drawable/ic_vibrate_horizontal"
+        android:gravity="center"
+        android:text="Shake horizontally to get a answer"
+        android:textColor="@android:color/white"
+        android:textSize="18sp"
+        />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/imageBall"
+            android:layout_width="330dp"
+            android:layout_height="330dp"
+            android:layout_centerInParent="true"
+            android:src="@drawable/magic_ball"
+            />
+
+        <TextView
+            android:id="@+id/answer"
+            android:layout_width="140dp"
+            android:layout_height="140dp"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:textColor="@android:color/white"
+            android:textSize="20sp"
+            tools:text="Concentrate and ask again"/>
+
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="2dp"
+        android:layout_marginTop="30dp"
+        android:drawableBottom="@drawable/ic_vibrate_vertical"
+        android:gravity="center"
+        android:text="Shake vertically to clear"
+        android:textColor="@android:color/white"
+        android:textSize="18sp"
+        />
+
+</LinearLayout>
